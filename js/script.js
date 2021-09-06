@@ -30,16 +30,25 @@ function numeriPc(){
         arrPc.push(numero);
     }
 }
+
+function confronto(){
+    for (var i=0; i < 5 ; i++){
+        arrPc.includes(arrUtente[i]);
+        arrNcomuni.push(arrUtente[i]);
+    }
+    console.log(arrNcomuni);
+}
+
 /**
  * PROGRAMMA PRINCIPALE
  */
 // Dichiarazione variabili 
 var arrPc = [];
 var arrUtente = [];
+var arrNcomuni = [];
 numeriPc();
 alert(arrPc);
 console.log("I numeri sono:", arrPc);
 setTimeout(numeriUtente, 3000);
-
-
+setTimeout(confronto(),0);
 
